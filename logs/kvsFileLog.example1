@@ -1,0 +1,624 @@
+pi@raspberrypi:~/amazon-kinesis-video-streams-webrtc-sdk-c/build/samples $ ./kvsWebrtcClientMasterGstSample TestBJS_KVS_WebRTC
+[KVS GStreamer Master] Using trickleICE by default
+[KVS GStreamer Master] Created signaling channel TestBJS_KVS_WebRTC
+2023-01-10 14:57:52 VERBOSE pregenerateCertTimerCallback(): New certificate has been pre-generated and added to the queue
+[KVS Gstreamer Master] Finished initializing GStreamer
+[KVS Gstreamer Master] Streaming video only
+[KVS GStreamer Master] streaming type video-only2023-01-10 14:57:52 INFO    initKvsWebRtc(): SDK version: ced19d02ed6fbc1e59dd63bc19d847c5ec5ebf47
+[KVS GStreamer Master] KVS WebRTC initialization completed successfully
+2023-01-10 14:57:52 VERBOSE createSignalingClientSync(): Creating Signaling Client Sync
+2023-01-10 14:57:52 VERBOSE createRetryStrategyForCreatingSignalingClient(): Using exponential backoff retry strategy for creating signaling client
+2023-01-10 14:57:52 VERBOSE normalizeExponentialBackoffConfig(): Thread Id [547772403776]. Exponential backoff retry strategy config - maxRetryCount: [0], maxRetryWaitTime: [160000000], retryFactorTime: [10000000], minTimeToResetRetryState: [900000000], jitterType: [1], jitterFactor: [0], 
+2023-01-10 14:57:52 VERBOSE resetExponentialBackoffRetryState(): Thread Id [547772403776]. Resetting Exponential Backoff State. Last retry system time [0], retry count so far [0], Current system time [16733626724933419]
+2023-01-10 14:57:52 VERBOSE exponentialBackoffRetryStrategyWithDefaultConfigCreate(): Created exponential backoff retry strategy state with default configuration.
+2023-01-10 14:57:52 VERBOSE normalizeExponentialBackoffConfig(): Thread Id [547772403776]. Exponential backoff retry strategy config - maxRetryCount: [0], maxRetryWaitTime: [100000000], retryFactorTime: [1000000], minTimeToResetRetryState: [900000000], jitterType: [1], jitterFactor: [545460846592], 
+2023-01-10 14:57:52 VERBOSE resetExponentialBackoffRetryState(): Thread Id [547772403776]. Resetting Exponential Backoff State. Last retry system time [0], retry count so far [0], Current system time [16733626724934966]
+2023-01-10 14:57:52 VERBOSE exponentialBackoffRetryStrategyCreate(): Created exponential backoff retry strategy state with provided retry configuration.
+[2023/01/10 22:57:52:4936] N: LWS: 4.2.1-v4.2.2, loglevel 7
+[2023/01/10 22:57:52:4936] N: NET CLI H1 H2 WS MbedTLS ConMon IPv6-absent
+[2023/01/10 22:57:52:4938] N:  ++ [wsi|0|pipe] (1)
+[2023/01/10 22:57:52:4938] N:  ++ [vh|0|netlink] (1)
+[2023/01/10 22:57:52:4939] N:  ++ [vh|1|default||-1] (2)
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 21
+2023-01-10 14:57:52 VERBOSE signalingClientStateChanged(): Signaling client state changed to 1 - 'New'
+2023-01-10 14:57:52 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000001, Next state: 0x0000000000000002, Current local state retry count [0], Max local state retry count [1], State transition wait time [0] ms
+2023-01-10 14:57:52 VERBOSE signalingClientStateChanged(): Signaling client state changed to 2 - 'Get Security Credentials'
+[KVS GStreamer Master] Signaling client created successfully
+2023-01-10 14:57:52 VERBOSE signalingClientFetchSync(): Signaling Client Fetch Sync
+2023-01-10 14:57:52 VERBOSE createRetryStrategyForCreatingSignalingClient(): Using exponential backoff retry strategy for creating signaling client
+2023-01-10 14:57:52 VERBOSE normalizeExponentialBackoffConfig(): Thread Id [547772403776]. Exponential backoff retry strategy config - maxRetryCount: [0], maxRetryWaitTime: [160000000], retryFactorTime: [10000000], minTimeToResetRetryState: [900000000], jitterType: [1], jitterFactor: [545460846592], 
+2023-01-10 14:57:52 VERBOSE resetExponentialBackoffRetryState(): Thread Id [547772403776]. Resetting Exponential Backoff State. Last retry system time [0], retry count so far [0], Current system time [16733626724943642]
+2023-01-10 14:57:52 VERBOSE exponentialBackoffRetryStrategyWithDefaultConfigCreate(): Created exponential backoff retry strategy state with default configuration.
+2023-01-10 14:57:52 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000002, Next state: 0x0000000000000004, Current local state retry count [0], Max local state retry count [1], State transition wait time [0] ms
+2023-01-10 14:57:52 VERBOSE signalingClientStateChanged(): Signaling client state changed to 3 - 'Describe Channel'
+2023-01-10 14:57:52 VERBOSE lwsCompleteSync(): Perform secure synchronous call for URL: https://kinesisvideo.cn-north-1.amazonaws.com.cn/describeSignalingChannel
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 27
+2023-01-10 14:57:52 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 27
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 85
+[2023/01/10 22:57:52:4947] N:  ++ [wsicli|0|POST/h1/kinesisvideo.cn-north-1.amazonaws.com.cn] (1)
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 105
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 19
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 31
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 71
+2023-01-10 14:57:52 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 71
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 71
+2023-01-10 14:57:52 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 71
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 71
+2023-01-10 14:57:52 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 71
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 29
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 24
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Client append handshake header
+
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Appending header - content-length: 40
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Appending header - content-type: application/json
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Appending header - user-agent: AWS-SDK-KVS/3.0.0 GCC/10.2.1 Linux/5.15.56-v8+ aarch64
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Appending header - X-Amz-Date: 20230110T145752Z
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 57
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Sending the body {
+        "ChannelName": "TestBJS_KVS_WebRTC"
+}, size 40
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 2
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 44
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Connected with server response: 200
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Date Header Returned By Server:  Tue, 10 Jan 2023 14:57:52 GMT
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 46
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Received client http
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 48
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Received client http read: 358 bytes
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Received client http read response:  {"ChannelInfo":{"ChannelARN":"arn:aws-cn:kinesisvideo:cn-north-1:405836024965:channel/TestBJS_KVS_WebRTC/1673182848858","ChannelName":"TestBJS_KVS_WebRTC","ChannelStatus":"ACTIVE","ChannelType":"SINGLE_MASTER","CreationTime":1.673182848858E9,"FullMeshConfiguration":null,"SingleMasterConfiguration":{"MessageTtlSeconds":60},"Version":"OoFHQCgrrikWbvSd1iWK"}}
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 47
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Http client completed
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 45
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Client http closed
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 30
+[2023/01/10 22:57:52:7754] N:  -- [wsicli|0|POST/h1/kinesisvideo.cn-north-1.amazonaws.com.cn] (0) 280.688ms
+2023-01-10 14:57:52 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000004, Next state: 0x0000000000000010, Current local state retry count [0], Max local state retry count [1], State transition wait time [0] ms
+2023-01-10 14:57:52 VERBOSE signalingClientStateChanged(): Signaling client state changed to 5 - 'Get Channel Endpoint'
+2023-01-10 14:57:52 VERBOSE lwsCompleteSync(): Perform secure synchronous call for URL: https://kinesisvideo.cn-north-1.amazonaws.com.cn/getSignalingChannelEndpoint
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 85
+[2023/01/10 22:57:52:7757] N:  ++ [wsicli|1|POST/h1/kinesisvideo.cn-north-1.amazonaws.com.cn] (1)
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 105
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 19
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 29
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 24
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Client append handshake header
+
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Appending header - content-length: 212
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Appending header - content-type: application/json
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Appending header - user-agent: AWS-SDK-KVS/3.0.0 GCC/10.2.1 Linux/5.15.56-v8+ aarch64
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Appending header - X-Amz-Date: 20230110T145752Z
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 57
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Sending the body {
+        "ChannelARN": "arn:aws-cn:kinesisvideo:cn-north-1:405836024965:channel/TestBJS_KVS_WebRTC/1673182848858",
+        "SingleMasterChannelEndpointConfiguration": {
+                "Protocols": ["WSS", "HTTPS"],
+                "Role": "MASTER"
+        }
+}, size 212
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 2
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 44
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Connected with server response: 200
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Date Header Returned By Server:  Tue, 10 Jan 2023 14:57:52 GMT
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 46
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Received client http
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 48
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Received client http read: 252 bytes
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): Received client http read response:  {"ResourceEndpointList":[{"Protocol":"HTTPS","ResourceEndpoint":"https://private-beta.r-f9968007.kinesisvideo.cn-north-1.amazonaws.com.cn"},{"Protocol":"WSS","ResourceEndpoint":"wss://private-beta.m-38cfd552.kinesisvideo.cn-north-1.amazonaws.com.cn"}]}
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 47
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Http client completed
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 45
+2023-01-10 14:57:52 DEBUG   lwsHttpCallbackRoutine(): Client http closed
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 30
+[2023/01/10 22:57:52:9818] N:  -- [wsicli|1|POST/h1/kinesisvideo.cn-north-1.amazonaws.com.cn] (0) 206.018ms
+2023-01-10 14:57:52 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000020, Current local state retry count [0], Max local state retry count [1], State transition wait time [0] ms
+2023-01-10 14:57:52 VERBOSE signalingClientStateChanged(): Signaling client state changed to 6 - 'Get ICE Server Configuration'
+2023-01-10 14:57:52 VERBOSE lwsCompleteSync(): Perform secure synchronous call for URL: https://private-beta.r-f9968007.kinesisvideo.cn-north-1.amazonaws.com.cn/v1/get-ice-server-config
+2023-01-10 14:57:52 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 85
+[2023/01/10 22:57:52:9820] N:  ++ [wsicli|2|POST/h1/private-beta.r-f9968007.kinesisvideo.cn-nort] (1)
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 105
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 19
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 29
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 24
+2023-01-10 14:57:53 DEBUG   lwsHttpCallbackRoutine(): Client append handshake header
+
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): Appending header - content-length: 160
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): Appending header - content-type: application/json
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): Appending header - user-agent: AWS-SDK-KVS/3.0.0 GCC/10.2.1 Linux/5.15.56-v8+ aarch64
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): Appending header - X-Amz-Date: 20230110T145752Z
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 57
+2023-01-10 14:57:53 DEBUG   lwsHttpCallbackRoutine(): Sending the body {
+        "ChannelARN": "arn:aws-cn:kinesisvideo:cn-north-1:405836024965:channel/TestBJS_KVS_WebRTC/1673182848858",
+        "ClientId": "ProducerMaster",
+        "Service": "TURN"
+}, size 160
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 2
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 44
+2023-01-10 14:57:53 DEBUG   lwsHttpCallbackRoutine(): Connected with server response: 200
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): Date Header Returned By Server:  Tue, 10 Jan 2023 14:57:53 GMT
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 46
+2023-01-10 14:57:53 DEBUG   lwsHttpCallbackRoutine(): Received client http
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 48
+2023-01-10 14:57:53 DEBUG   lwsHttpCallbackRoutine(): Received client http read: 1019 bytes
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): Received client http read response:  {"IceServerList":[{"Password":"GpzA3miPD7pSjhk89c6j8aLsL60GKgkRwAV5X30Sp+E=","Ttl":300,"Uris":["turn:52-81-38-46.t-89e91582.kinesisvideo.cn-north-1.amazonaws.com.cn:443?transport=udp","turns:52-81-38-46.t-89e91582.kinesisvideo.cn-north-1.amazonaws.com.cn:443?transport=udp","turns:52-81-38-46.t-89e91582.kinesisvideo.cn-north-1.amazonaws.com.cn:443?transport=tcp"],"Username":"1673362973:djE6YXJuOmF3cy1jbjpraW5lc2lzdmlkZW86Y24tbm9ydGgtMTo0MDU4MzYwMjQ5NjU6Y2hhbm5lbC9UZXN0QkpTX0tWU19XZWJSVEMvMTY3MzE4Mjg0ODg1OA=="},{"Password":"Hi8wt5ygM7TsQTMNrYyMRAd7LPT4mAzEUhrm78Zgrg0=","Ttl":300,"Uris":["turn:71-136-83-148.t-89e91582.kinesisvideo.cn-north-1.amazonaws.com.cn:443?transport=udp","turns:71-136-83-148.t-89e91582.kinesisvideo.cn-north-1.amazonaws.com.cn:443?transport=udp","turns:71-136-83-148.t-89e91582.kinesisvideo.cn-north-1.amazonaws.com.cn:443?transport=tcp"],"Username":"1673362973:djE6YXJuOmF3cy1jbjpraW5lc2lzdmlkZW86Y24tbm9ydGgtMTo0MDU4MzYwMjQ5NjU6Y2hhbm5lbC9UZXN0QkpTX0tWU19XZWJSVEMvMTY3MzE4Mjg0ODg1OA=="}]}
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 47
+2023-01-10 14:57:53 DEBUG   lwsHttpCallbackRoutine(): Http client completed
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 45
+2023-01-10 14:57:53 DEBUG   lwsHttpCallbackRoutine(): Client http closed
+2023-01-10 14:57:53 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 30
+[2023/01/10 22:57:53:2723] N:  -- [wsicli|2|POST/h1/private-beta.r-f9968007.kinesisvideo.cn-nort] (0) 290.306ms
+2023-01-10 14:57:53 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000020, Next state: 0x0000000000000040, Current local state retry count [0], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:57:53 VERBOSE signalingClientStateChanged(): Signaling client state changed to 7 - 'Ready'
+2023-01-10 14:57:53 VERBOSE signalingClientConnectSync(): Signaling Client Connect Sync
+2023-01-10 14:57:53 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000040, Next state: 0x0000000000000080, Current local state retry count [0], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:57:53 VERBOSE signalingClientStateChanged(): Signaling client state changed to 8 - 'Connecting'
+2023-01-10 14:57:53 VERBOSE lwsCompleteSync(): Perform secure synchronous call for URL: wss://private-beta.m-38cfd552.kinesisvideo.cn-north-1.amazonaws.com.cn?X-Amz-ChannelARN=arn:aws-cn:kinesisvideo:cn-north-1:405836024965:channel/TestBJS_KVS_WebRTC/1673182848858
+2023-01-10 14:57:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 85
+[2023/01/10 22:57:53:2731] N:  ++ [wsicli|3|WS/h1/private-beta.m-38cfd552.kinesisvideo.cn-north-] (1)
+2023-01-10 14:57:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 105
+2023-01-10 14:57:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 19
+2023-01-10 14:57:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 29
+2023-01-10 14:57:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 24
+2023-01-10 14:57:53 VERBOSE pregenerateCertTimerCallback(): New certificate has been pre-generated and added to the queue
+2023-01-10 14:57:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 44
+2023-01-10 14:57:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 2
+2023-01-10 14:57:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 3
+2023-01-10 14:57:53 DEBUG   lwsWssCallbackRoutine(): Connection established
+2023-01-10 14:57:53 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000080, Next state: 0x0000000000000100, Current local state retry count [0], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:57:53 VERBOSE signalingClientStateChanged(): Signaling client state changed to 9 - 'Connected'
+[KVS GStreamer Master] Signaling client connection to socket established
+[KVS Gstreamer Master] Beginning streaming...check the stream over channel TestBJS_KVS_WebRTC
+2023-01-10 14:57:53 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:57:54 VERBOSE pregenerateCertTimerCallback(): New certificate has been pre-generated and added to the queue
+2023-01-10 14:57:58 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:03 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:03 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:03 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:03 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 9
+2023-01-10 14:58:08 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:13 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:13 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:13 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:13 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 9
+2023-01-10 14:58:18 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:23 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:23 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:23 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:23 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 9
+2023-01-10 14:58:28 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:33 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:33 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:33 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:33 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 9
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 DEBUG   receiveLwsMessage(): Client received message of type: SDP_OFFER
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 VERBOSE signalingClientGetIceConfigInfoCount(): Signaling Client Get ICE Config Info Count
+2023-01-10 14:58:37 DEBUG   refreshIceConfiguration(): Refreshing the ICE Server Configuration
+2023-01-10 14:58:37 VERBOSE signalingClientGetIceConfigInfo(): Signaling Client Get ICE Config Info
+2023-01-10 14:58:37 DEBUG   refreshIceConfiguration(): Refreshing the ICE Server Configuration
+2023-01-10 14:58:37 DEBUG   iceAgentValidateKvsRtcConfig(): 
+        iceLocalCandidateGatheringTimeout: 10000 ms
+        iceConnectionCheckTimeout: 10000 ms
+        iceCandidateNominationTimeout: 10000 ms
+        iceConnectionCheckPollingInterval: 50 ms
+2023-01-10 14:58:37 DEBUG   initializePeerConnection(): time taken to create peer connection 360 ms
+2023-01-10 14:58:37 VERBOSE setPayloadTypesFromOffer(): Found H264 payload type 126 with score 3: profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1
+2023-01-10 14:58:37 DEBUG   createSocket(): setsockopt() NO_SIGNAL failed with errno Protocol not available
+2023-01-10 14:58:37 DEBUG   createSocket(): setsockopt() NO_SIGNAL failed with errno Protocol not available
+2023-01-10 14:58:37 DEBUG   createSocket(): setsockopt() NO_SIGNAL failed with errno Protocol not available
+2023-01-10 14:58:37 DEBUG   createSocket(): setsockopt() NO_SIGNAL failed with errno Protocol not available
+2023-01-10 14:58:37 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000001, Next state: 0x0000000000000002, Current local state retry count [0], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:37 DEBUG   iceAgentCheckConnectionStateSetup(): ice candidate pair count 0
+2023-01-10 14:58:37 VERBOSE signalingClientSendMessageSync(): Signaling Client Sending Message Sync
+2023-01-10 14:58:37 DEBUG   stepIceAgentStateMachine(): Ice agent state changed from ICE_AGENT_STATE_NONE to ICE_AGENT_STATE_CHECK_CONNECTION.
+2023-01-10 14:58:37 INFO    onConnectionStateChange(): New connection state 2
+2023-01-10 14:58:37 DEBUG   sendLwsMessage(): Sending data over web socket: Message type: SDP_ANSWER, RecepientId: IOVDX3C1Z8H
+2023-01-10 14:58:37 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 71
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 71
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 DEBUG   handleOffer(): time taken to send answer 7 ms
+2023-01-10 14:58:37 ERROR   iceAgentAddRemoteCandidate(): operation returned status code: 0x5a000005
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_NEW to TURN_STATE_CHECK_SOCKET_CONNECTION
+2023-01-10 14:58:37 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: RE3hk1JaL. Ip: 172.30.128.1:50661. Type: host. Protocol: udp.
+2023-01-10 14:58:37 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: HqTXPLAmX. Ip: 192.168.0.18:50663. Type: host. Protocol: udp.
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_NEW to TURN_STATE_CHECK_SOCKET_CONNECTION
+2023-01-10 14:58:37 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: +5h1mP23+. Ip: 172.23.64.1:50662. Type: host. Protocol: udp.
+2023-01-10 14:58:37 ERROR   iceAgentAddRemoteCandidate(): operation returned status code: 0x5a000005
+2023-01-10 14:58:37 DEBUG   iceAgentLogNewCandidate(): New local ice candidate discovered. Id: fImPdOLMM. Ip: 192.168.0.14:54081. Type: host. Protocol: udp.
+2023-01-10 14:58:37 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: nezVIhsZL. Ip: 172.30.128.1:50664. Type: host. Protocol: udp.
+2023-01-10 14:58:37 VERBOSE signalingClientSendMessageSync(): Signaling Client Sending Message Sync
+2023-01-10 14:58:37 DEBUG   sendLwsMessage(): Sending data over web socket: Message type: ICE_CANDIDATE, RecepientId: IOVDX3C1Z8H
+2023-01-10 14:58:37 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 71
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 71
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 VERBOSE pregenerateCertTimerCallback(): New certificate has been pre-generated and added to the queue
+2023-01-10 14:58:37 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM RE3hk1JaL, state: 1
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM nezVIhsZL, state: 1
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM +5h1mP23+, state: 1
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM HqTXPLAmX, state: 1
+2023-01-10 14:58:37 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000002, Next state: 0x0000000000000002, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:58821.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:59589.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.23.64.1, port:172, local ip:59077.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:192.168.0.18, port:192, local ip:59333.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_CHECK_SOCKET_CONNECTION to TURN_STATE_GET_CREDENTIALS
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_CHECK_SOCKET_CONNECTION to TURN_STATE_GET_CREDENTIALS
+2023-01-10 14:58:37 DEBUG   iceAgentLogNewCandidate(): New local ice candidate discovered. Id: QqIKlPoLe. Ip: 183.210.222.132:8657. Type: srflx. Protocol: udp.
+2023-01-10 14:58:37 VERBOSE signalingClientSendMessageSync(): Signaling Client Sending Message Sync
+2023-01-10 14:58:37 DEBUG   sendLwsMessage(): Sending data over web socket: Message type: ICE_CANDIDATE, RecepientId: IOVDX3C1Z8H
+2023-01-10 14:58:37 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 71
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 71
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:37 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM RE3hk1JaL, state: 2
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM nezVIhsZL, state: 2
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM +5h1mP23+, state: 2
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM HqTXPLAmX, state: 2
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: QqIKlPoLe RE3hk1JaL, state: 1
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: QqIKlPoLe nezVIhsZL, state: 1
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: QqIKlPoLe +5h1mP23+, state: 1
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: QqIKlPoLe HqTXPLAmX, state: 1
+2023-01-10 14:58:37 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000002, Next state: 0x0000000000000002, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:58821.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:59589.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.23.64.1, port:172, local ip:59077.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:192.168.0.18, port:192, local ip:59333.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:58821.210.222.132, port:183
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:59589.210.222.132, port:183
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.23.64.1, port:172, local ip:59077.210.222.132, port:183
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:192.168.0.18, port:192, local ip:59333.210.222.132, port:183
+2023-01-10 14:58:37 VERBOSE incomingRelayedDataHandler(): Candidate id: aOWl2gi1C
+2023-01-10 14:58:37 VERBOSE handleStunPacket(): Pair binding response! fImPdOLMM HqTXPLAmX
+2023-01-10 14:58:37 VERBOSE handleStunPacket(): Pair succeeded! fImPdOLMM HqTXPLAmX
+2023-01-10 14:58:37 DEBUG   handleStunPacket(): Ice candidate pair fImPdOLMM_HqTXPLAmX is connected. Round trip time: 88ms
+2023-01-10 14:58:37 VERBOSE handleStunPacket(): Pair binding response! fImPdOLMM HqTXPLAmX
+2023-01-10 14:58:37 DEBUG   socketConnectionTlsSessionOnStateChange(): TLS handshake done. Time taken 90 ms
+2023-01-10 14:58:37 VERBOSE handleStunPacket(): Pair binding response! QqIKlPoLe HqTXPLAmX
+2023-01-10 14:58:37 DEBUG   handleStunPacket(): local candidate ip address does not match with xor mapped address in binding response
+2023-01-10 14:58:37 DEBUG   iceAgentLogNewCandidate(): New local ice candidate discovered. Id: QqIKlPoLe. Ip: 192.168.0.14:35151. Type: prflx. Protocol: udp.
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM RE3hk1JaL, state: 2
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM nezVIhsZL, state: 2
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM +5h1mP23+, state: 2
+2023-01-10 14:58:37 DEBUG   fromCheckConnectionIceAgentState(): Checking pair: fImPdOLMM HqTXPLAmX, state: 3
+2023-01-10 14:58:37 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000002, Next state: 0x0000000000000004, Current local state retry count [0], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:37 DEBUG   stepIceAgentStateMachine(): Ice agent state changed from ICE_AGENT_STATE_CHECK_CONNECTION to ICE_AGENT_STATE_CONNECTED.
+2023-01-10 14:58:37 VERBOSE turnConnectionStepState(): Updated turn allocation request credential after receiving 401
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_GET_CREDENTIALS to TURN_STATE_ALLOCATION
+2023-01-10 14:58:37 VERBOSE iceAgentSendKeepAliveTimerCallback(): send keep alive
+2023-01-10 14:58:37 DEBUG   handleStunPacket(): received candidate with USE_CANDIDATE flag, local candidate type host.
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 VERBOSE incomingRelayedDataHandler(): Candidate id: aOWl2gi1C
+2023-01-10 14:58:37 VERBOSE incomingRelayedDataHandler(): Candidate id: aU4V7MFW+
+2023-01-10 14:58:37 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000004, Next state: 0x0000000000000008, Current local state retry count [0], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:58821.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:59589.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.23.64.1, port:172, local ip:59077.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:58821.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.30.128.1, port:172, local ip:59589.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:172.23.64.1, port:172, local ip:59077.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   iceCandidatePairCheckConnection(): remote ip:192.168.0.18, port:192, local ip:59333.168.0.14, port:192
+2023-01-10 14:58:37 DEBUG   stepIceAgentStateMachine(): Ice agent state changed from ICE_AGENT_STATE_CONNECTED to ICE_AGENT_STATE_NOMINATING.
+2023-01-10 14:58:37 VERBOSE turnConnectionStepState(): Updated turn allocation request credential after receiving 401
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_GET_CREDENTIALS to TURN_STATE_ALLOCATION
+2023-01-10 14:58:37 VERBOSE handleStunPacket(): Pair binding response! QqIKlPoLe HqTXPLAmX
+2023-01-10 14:58:37 VERBOSE handleStunPacket(): Pair succeeded! QqIKlPoLe HqTXPLAmX
+2023-01-10 14:58:37 DEBUG   handleStunPacket(): Ice candidate pair QqIKlPoLe_HqTXPLAmX is connected. Round trip time: 7ms
+2023-01-10 14:58:37 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:37 VERBOSE incomingRelayedDataHandler(): Candidate id: aOWl2gi1C
+2023-01-10 14:58:37 DEBUG   turnConnectionHandleStun(): TURN Allocation succeeded. Life time: 600 seconds. Allocation expiration epoch 167336331797234
+2023-01-10 14:58:37 VERBOSE incomingRelayedDataHandler(): Candidate id: aU4V7MFW+
+2023-01-10 14:58:37 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000008, Next state: 0x0000000000000010, Current local state retry count [0], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:37 DEBUG   iceAgentReadyStateSetup(): Selected pair fImPdOLMM_HqTXPLAmX, local candidate type: host. Round trip time 37 ms. Local candidate priority: 2130706431, ice candidate pair priority: 9114442320345825278
+2023-01-10 14:58:37 DEBUG   iceAgentReadyStateSetup(): Freeing Turn allocations that are not selected. Total turn allocation count 2
+2023-01-10 14:58:37 DEBUG   stepIceAgentStateMachine(): Ice agent state changed from ICE_AGENT_STATE_NOMINATING to ICE_AGENT_STATE_READY.
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): Relay address received: 52.81.38.46, port: 53245
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_ALLOCATION to TURN_STATE_CLEAN_UP
+2023-01-10 14:58:37 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_ALLOCATION to TURN_STATE_CLEAN_UP
+2023-01-10 14:58:37 DEBUG   iceAgentGatherCandidateTimerCallback(): Candidate gathering completed.
+2023-01-10 14:58:37 DEBUG   onIceCandidateHandler(): ice candidate gathering finished
+2023-01-10 14:58:38 VERBOSE incomingRelayedDataHandler(): Candidate id: aOWl2gi1C
+2023-01-10 14:58:38 DEBUG   dtlsSessionChangeState(): DTLS init completed. Time taken 135 ms
+2023-01-10 14:58:38 INFO    onConnectionStateChange(): New connection state 3
+2023-01-10 14:58:38 DEBUG   rtcPeerConnectionGetMetrics(): ICE local candidate Stats requested at 16733627180232839
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Local Candidate IP Address: 192.168.0.14
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Local Candidate type: host
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Local Candidate port: 54081
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Local Candidate priority: 2130706431
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Local Candidate transport protocol: udp
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Local Candidate relay protocol: N/A
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Local Candidate Ice server source: N/A
+2023-01-10 14:58:38 DEBUG   rtcPeerConnectionGetMetrics(): ICE remote candidate Stats requested at 16733627180233935
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Remote Candidate IP Address: 192.168.0.18
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Remote Candidate type: host
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Remote Candidate port: 50663
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Remote Candidate priority: 2122121471
+2023-01-10 14:58:38 DEBUG   logSelectedIceCandidatesInformation(): Remote Candidate transport protocol: udp
+2023-01-10 14:58:38 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:38 VERBOSE incomingRelayedDataHandler(): Candidate id: aU4V7MFW+
+[13:26:22.381150004] [2919]  INFO Camera camera_manager.cpp:293 libcamera v0.0.0+3700-f30ad033
+2023-01-10 14:58:38 DEBUG   socketConnectionClosed(): Close socket 11
+2023-01-10 14:58:38 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_CLEAN_UP to TURN_STATE_NEW
+2023-01-10 14:58:38 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:38 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:38 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:38 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:38 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: +O0rrJ3ks. Ip: 52.81.227.64:62848. Type: relay. Protocol: udp.
+2023-01-10 14:58:38 VERBOSE incomingRelayedDataHandler(): Candidate id: aOWl2gi1C
+2023-01-10 14:58:38 DEBUG   turnConnectionHandleStun(): TURN Allocation freed.
+2023-01-10 14:58:38 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:38 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:38 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:38 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:38 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: fPKuqPUMt. Ip: 183.210.222.132:8660. Type: srflx. Protocol: udp.
+2023-01-10 14:58:38 DEBUG   socketConnectionClosed(): Close socket 10
+2023-01-10 14:58:38 DEBUG   turnConnectionStepState(): TurnConnection state changed from TURN_STATE_CLEAN_UP to TURN_STATE_NEW
+2023-01-10 14:58:38 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:38 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:38 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:38 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:38 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: k3ivv/v1b. Ip: 183.210.222.132:8661. Type: srflx. Protocol: udp.
+2023-01-10 14:58:38 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:38 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:38 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:38 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:38 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: tOacMycBn. Ip: 52.81.227.64:55284. Type: relay. Protocol: udp.
+2023-01-10 14:58:38 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572804904839213 rtpTs: 2841062350 0 pkts 0 bytes
+2023-01-10 14:58:38 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:38 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:39 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572809270501671 rtpTs: 2841153880 36 pkts 27855 bytes
+2023-01-10 14:58:39 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:39 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:40 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572815471034287 rtpTs: 2841283750 78 pkts 67340 bytes
+2023-01-10 14:58:40 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:40 VERBOSE rtcpReportsCallback(): sender report no frames sent 138090424
+2023-01-10 14:58:40 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572813113566252 80321410595066 : 0 packets 0 bytes
+2023-01-10 14:58:40 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572814085649206 80321410605930 : 0 packets 0 bytes
+2023-01-10 14:58:40 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:40 VERBOSE rtcpReportsCallback(): sender report no frames sent 138090424
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572814684017607 80321410612617 : 0 packets 0 bytes
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572815284641726 241856 : 417 packets 236693 bytes
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572815522702743 80321410621990 : 0 packets 0 bytes
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572816029561283 257465 : 442 packets 250998 bytes
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572816520557220 80321410633142 : 0 packets 0 bytes
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572817281164575 283692 : 489 packets 276799 bytes
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572817492237306 80321410644001 : 0 packets 0 bytes
+2023-01-10 14:58:41 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572820302589027 rtpTs: 2841385000 113 pkts 98725 bytes
+2023-01-10 14:58:41 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572818013422568 80321410649826 : 0 packets 0 bytes
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572818492490522 80321410655180 : 0 packets 0 bytes
+2023-01-10 14:58:41 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:41 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572818564204879 310578 : 534 packets 302548 bytes
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572819110920715 322034 : 554 packets 313992 bytes
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572819559967707 80321410667110 : 0 packets 0 bytes
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572820087146166 342491 : 589 packets 334019 bytes
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572820714035297 80321410680008 : 0 packets 0 bytes
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572821158955684 364951 : 626 packets 354097 bytes
+2023-01-10 14:58:42 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572823848505437 rtpTs: 2841459340 139 pkts 124244 bytes
+2023-01-10 14:58:42 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572821489769957 80321410688677 : 0 packets 0 bytes
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572821793975189 378257 : 646 packets 363276 bytes
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572822669012498 80321410701856 : 0 packets 0 bytes
+2023-01-10 14:58:42 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572822781238276 398945 : 681 packets 383303 bytes
+2023-01-10 14:58:42 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:43 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:43 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572823633896229 80321410712640 : 0 packets 0 bytes
+2023-01-10 14:58:43 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572823922934643 422869 : 721 packets 406191 bytes
+2023-01-10 14:58:43 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572824172946837 80321410718664 : 0 packets 0 bytes
+2023-01-10 14:58:43 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572824422759744 433343 : 741 packets 417635 bytes
+2023-01-10 14:58:43 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572825338805831 80321410731693 : 0 packets 0 bytes
+2023-01-10 14:58:43 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572825506616645 456055 : 778 packets 437714 bytes
+2023-01-10 14:58:43 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:43 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:43 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572828794551120 rtpTs: 2841563020 186 pkts 164901 bytes
+2023-01-10 14:58:43 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:43 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 9
+2023-01-10 14:58:43 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572826251266049 471659 : 808 packets 452109 bytes
+2023-01-10 14:58:43 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572826303103728 80321410742470 : 0 packets 0 bytes
+2023-01-10 14:58:43 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572829462933931 rtpTs: 2841576970 192 pkts 170746 bytes
+2023-01-10 14:58:43 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:43 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:43 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572827305804215 80321410753676 : 0 packets 0 bytes
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572827386687899 495451 : 843 packets 472136 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572830338793726 rtpTs: 2841595330 200 pkts 177691 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:44 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572828204071715 512579 : 873 packets 483760 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572831201472267 rtpTs: 2841613420 207 pkts 184685 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:44 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572828540156342 80321410767471 : 0 packets 0 bytes
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572829168433607 532787 : 908 packets 484390 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572832082172491 rtpTs: 2841631870 216 pkts 191873 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:44 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572829534619941 80321410778585 : 0 packets 0 bytes
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572830188629214 554165 : 945 packets 488265 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572832953612766 rtpTs: 2841650140 226 pkts 200119 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:44 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572830684304947 564552 : 965 packets 491691 bytes
+2023-01-10 14:58:44 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572830811696684 80321410792858 : 0 packets 0 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572833846897244 rtpTs: 2841668860 232 pkts 206290 bytes
+2023-01-10 14:58:44 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:44 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:44 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572831560784077 80321410801229 : 0 packets 0 bytes
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572831669154692 585189 : 995 packets 496698 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572834716138495 rtpTs: 2841687040 241 pkts 213960 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:45 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572832042975331 80321410806618 : 0 packets 0 bytes
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572832537989640 603395 : 1025 packets 509019 bytes
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572832637968747 80321410813268 : 0 packets 0 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572835583979587 rtpTs: 2841705220 248 pkts 219390 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:45 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572833627585476 80321410824328 : 0 packets 0 bytes
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572833656554601 626835 : 1068 packets 529634 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572836464280379 rtpTs: 2841723670 256 pkts 226904 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:45 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:45 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572837332237435 rtpTs: 2841741850 265 pkts 234705 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:45 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572834636493051 647369 : 1105 packets 540408 bytes
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572834767380032 80321410837066 : 0 packets 0 bytes
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572835391524250 80321410844041 : 0 packets 0 bytes
+2023-01-10 14:58:45 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572835406100939 663496 : 1135 packets 543765 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572838198738497 rtpTs: 2841760030 273 pkts 241366 bytes
+2023-01-10 14:58:45 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:45 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:45 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572835857741661 672960 : 1150 packets 547475 bytes
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572836367748841 80321410854952 : 0 packets 0 bytes
+2023-01-10 14:58:46 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572839088299238 rtpTs: 2841778660 282 pkts 249331 bytes
+2023-01-10 14:58:46 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:46 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572836812091984 80321410859917 : 0 packets 0 bytes
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572837035791061 697646 : 1190 packets 556091 bytes
+2023-01-10 14:58:46 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572839965327265 rtpTs: 2841797020 293 pkts 256653 bytes
+2023-01-10 14:58:46 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:46 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572837973260874 80321410872895 : 0 packets 0 bytes
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572838120228213 720370 : 1225 packets 562399 bytes
+2023-01-10 14:58:46 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572840834297933 rtpTs: 2841815290 302 pkts 263291 bytes
+2023-01-10 14:58:46 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:46 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572838486585916 80321410878631 : 0 packets 0 bytes
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572839158132400 80321410886136 : 0 packets 0 bytes
+2023-01-10 14:58:46 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572839161075312 742181 : 1265 packets 569311 bytes
+2023-01-10 14:58:46 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572841701262852 rtpTs: 2841833470 311 pkts 270005 bytes
+2023-01-10 14:58:46 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:46 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:46 VERBOSE stepStateMachine(): State Machine - Current state: 0x0000000000000010, Next state: 0x0000000000000010, Current local state retry count [1], Max local state retry count [0], State transition wait time [0] ms
+2023-01-10 14:58:47 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572842565083854 rtpTs: 2841851560 322 pkts 277607 bytes
+2023-01-10 14:58:47 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:47 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:47 ERROR   iceAgentAddRemoteCandidate(): operation returned status code: 0x5a000005
+2023-01-10 14:58:47 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572840203511548 80321410897819 : 0 packets 0 bytes
+2023-01-10 14:58:47 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572840312167349 766301 : 1305 packets 573692 bytes
+2023-01-10 14:58:47 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572843438864886 rtpTs: 2841869830 332 pkts 284954 bytes
+2023-01-10 14:58:47 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:47 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:47 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572840863693549 777859 : 1327 packets 580432 bytes
+2023-01-10 14:58:47 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572841369591304 80321410910851 : 0 packets 0 bytes
+2023-01-10 14:58:47 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572844299541972 rtpTs: 2841887920 341 pkts 292433 bytes
+2023-01-10 14:58:47 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:47 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:47 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: 85NMa8GW6. Ip: 172.23.64.1:62522. Type: host. Protocol: udp.
+2023-01-10 14:58:47 VERBOSE rtcpReportsCallback(): sender report 138090424 16674572841958393954 800798 : 1362 packets 590396 bytes
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:47 ERROR   iceAgentAddRemoteCandidate(): operation returned status code: 0x5a000005
+2023-01-10 14:58:47 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572842062658151 80321410918597 : 0 packets 0 bytes
+2023-01-10 14:58:47 VERBOSE onRtcpSenderReport(): RTCP_PACKET_TYPE_SENDER_REPORT 1276268234 16674572845164831854 rtpTs: 2841906010 351 pkts 300230 bytes
+2023-01-10 14:58:47 VERBOSE onRtcpPacket(): unhandled packet type RTCP_PACKET_TYPE_SOURCE_DESCRIPTION
+2023-01-10 14:58:47 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:47 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: 0J0lOFCV2. Ip: 192.168.0.18:62523. Type: host. Protocol: udp.
+2023-01-10 14:58:47 VERBOSE rtcpReportsCallback(): sender report 1610499640 16674572842598080800 80321410924581 : 0 packets 0 bytes
+2023-01-10 14:58:47 VERBOSE sampleBandwidthEstimationHandler(): received bitrate suggestion: 652728.000000
+2023-01-10 14:58:47 WARN    onRtcpPacket(): unhandled packet type 203
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:47 DEBUG   iceAgentLogNewCandidate(): New remote ice candidate discovered. Id: /zTFySQm7. Ip: 172.23.64.1:62519. Type: host. Protocol: udp.
+2023-01-10 14:58:47 DEBUG   dtlsSessionProcessPacket(): Detected DTLS close_notify alert
+2023-01-10 14:58:47 INFO    onConnectionStateChange(): New connection state 6
+2023-01-10 14:58:47 DEBUG   freeSampleStreamingSession(): Freeing streaming session with peer id: IOVDX3C1Z8H 
+2023-01-10 14:58:47 DEBUG   socketConnectionClosed(): Close socket 9
+2023-01-10 14:58:47 DEBUG   socketConnectionClosed(): Close socket 8
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:47 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:47 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:47 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:48 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:48 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:48 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:48 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:48 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 8
+2023-01-10 14:58:48 DEBUG   receiveLwsMessage(): Client received message of type: ICE_CANDIDATE
+2023-01-10 14:58:48 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:48 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:49 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:58:53 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:58:53 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 9
+2023-01-10 14:58:54 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:58:59 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:59:03 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:59:03 DEBUG   lwsWssCallbackRoutine(): Client is writable
+2023-01-10 14:59:03 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 9
+2023-01-10 14:59:04 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+2023-01-10 14:59:09 VERBOSE signalingClientGetCurrentState(): Signaling Client Get Current State
+^C[KVS GStreamer Master] Streaming session terminated
+[KVS GStreamer Master] Cleaning up....
+2023-01-10 14:59:10 VERBOSE freeSignalingClient(): Freeing Signaling Client
+2023-01-10 14:59:10 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 71
+2023-01-10 14:59:10 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 71
+2023-01-10 14:59:10 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 10
+2023-01-10 14:59:10 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 75
+2023-01-10 14:59:10 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 30
+[2023/01/10 22:59:10:6691] N:  -- [wsicli|3|WS/h1/private-beta.m-38cfd552.kinesisvideo.cn-north-] (0) 1.289min
+[2023/01/10 22:59:10:6692] N:  -- [wsi|0|pipe] (0) 1.302min
+[2023/01/10 22:59:10:6692] N:  -- [vh|0|netlink] (1) 1.302min
+2023-01-10 14:59:10 VERBOSE lwsHttpCallbackRoutine(): HTTPS callback with reason 28
+2023-01-10 14:59:10 VERBOSE lwsWssCallbackRoutine(): WSS callback with reason 28
+[2023/01/10 22:59:10:6693] N:  -- [vh|1|default||-1] (0) 1.302min
+[KVS Gstreamer Master] Cleanup done

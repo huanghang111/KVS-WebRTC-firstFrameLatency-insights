@@ -1,0 +1,38 @@
+{
+    "version": "2023-11-19",
+    "logs_namePattern": "logs/kvs*",
+    "keywords": {
+        "1":"Signaling client state changed to 2 - 'Get Security Credentials'",
+        "2":"Signaling client state changed to 3 - 'Describe Channel'",
+        "3":"Signaling client state changed to 5 - 'Get Channel Endpoint'",
+        "4":"Signaling client state changed to 6 - 'Get ICE Server Configuration'",
+        "5":"Signaling client state changed to 8 - 'Connecting'",
+        "6":"Signaling client state changed to 9 - 'Connected'",
+        "7":"[VIEWER] Starting viewer connection",
+        "8":"[VIEWER] Connected to signaling service",
+        "9":"[VIEWER] Sending SDP offer",
+        "10":"Client received message of type: SDP_OFFER",
+        "11":"Sending data over web socket: Message type: SDP_ANSWER",
+        "12":"[VIEWER] Received SDP answer",
+        "13":"Ice agent state changed from ICE_AGENT_STATE_CONNECTED to ICE_AGENT_STATE_NOMINATING",
+        "14":"Ice agent state changed from ICE_AGENT_STATE_NOMINATING to ICE_AGENT_STATE_READY",
+        "16":"sender report"
+    },
+    "stepsdetails": {
+        "1":["authentication",              "获取AWS登录密钥",                            "Master"],
+        "2":["Describe SignalingChannel",   "访问AWS KVS API, 获取Signaling Channel信息", "Master"],
+        "3":["Get Endpoint",                "从API获取Signaling Channel地址",            "Master"],
+        "4":["Get ICE Servers",	            "从API获取ICE Server信息",                   "Master"],
+        "5":["ConnectAsMaster",	            "Master发起WebSocket连接Signaling Channel", "Master"],
+        "6":["connected",                   "Master成功连接Signaling Channel",          "Master"],
+        "7":["ConnectAsViewer",	            "Viewer发起WebSocket连接",                  "Viewer"],
+        "8":["connected",                   "Viewer成功连接signaling Channel",          "Viewer"],
+        "9":["SendSdpOffer",                "Viewer发送SDP offer",                      "Viewer"],
+        "10":["onSdpOffer callback",        "Master收到SDP offer",                        "Master"],
+        "11":["SendSdpAnswer",	            "Master发送SDP Answer",                       "Master"],
+        "12":["onSdpAnswer callback",	    "Viewer收到SDP Answer",                       "Viewer"],
+        "13":["ICE nominating",	            "收集ICE Candidates",                         "Master"],
+        "14":["Peer Connection",	        "P2P连接成功",                                 "Master"],
+        "16":["sendVideoPackets",	        "开始RTP传输视频数据",                          "Master"]
+    }
+}
